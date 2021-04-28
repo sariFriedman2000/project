@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F921A53-F400-43F3-8AA3-5F34A73693DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>projectEndOfSimester</RootNamespace>
+    <AssemblyName>projectEndOfSimester</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adultEvent.cs" />
+    <Compile Include="adultsEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adultsEvent.Designer.cs">
+      <DependentUpon>adultsEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="businessC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="businessC.Designer.cs">
+      <DependentUpon>businessC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="businessCustomers.cs" />
+    <Compile Include="calculationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calculationForm.Designer.cs">
+      <DependentUpon>calculationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CFM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFM.Designer.cs">
+      <DependentUpon>CFM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CFW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFW.Designer.cs">
+      <DependentUpon>CFW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="childrenShow.cs" />
+    <Compile Include="childrensShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="childrensShow.Designer.cs">
+      <DependentUpon>childrensShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs" />
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL.cs" />
+    <Compile Include="ICalculation.cs" />
+    <Compile Include="Idiscount.cs" />
+    <Compile Include="invitadS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invitadS.Designer.cs">
+      <DependentUpon>invitadS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kindOfWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kindOfWorker.Designer.cs">
+      <DependentUpon>kindOfWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager.cs" />
+    <Compile Include="managerF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managerF.Designer.cs">
+      <DependentUpon>managerF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newHall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newHall.Designer.cs">
+      <DependentUpon>newHall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newPresentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newPresentation.Designer.cs">
+      <DependentUpon>newPresentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newShow.Designer.cs">
+      <DependentUpon>newShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newWorker.Designer.cs">
+      <DependentUpon>newWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentation.cs" />
+    <Compile Include="privateC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="privateC.Designer.cs">
+      <DependentUpon>privateC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="privateCustomers.cs" />
+    <Compile Include="Program.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="show.cs" />
+    <Compile Include="showHall.cs" />
+    <Compile Include="worker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="adultsEvent.resx">
+      <DependentUpon>adultsEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="businessC.resx">
+      <DependentUpon>businessC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calculationForm.resx">
+      <DependentUpon>calculationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CFM.resx">
+      <DependentUpon>CFM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CFW.resx">
+      <DependentUpon>CFW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="childrensShow.resx">
+      <DependentUpon>childrensShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invitadS.resx">
+      <DependentUpon>invitadS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kindOfWorker.resx">
+      <DependentUpon>kindOfWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerF.resx">
+      <DependentUpon>managerF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newHall.resx">
+      <DependentUpon>newHall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newPresentation.resx">
+      <DependentUpon>newPresentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newShow.resx">
+      <DependentUpon>newShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newWorker.resx">
+      <DependentUpon>newWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="privateC.resx">
+      <DependentUpon>privateC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program.resx">
+      <DependentUpon>Program.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חעלע.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תמונה8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תמונה9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תמונה10.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
